@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="dcc45ae6-dec3-4ba0-a8f8-2f59fdacef33" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Application/Scripts/Creater.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="437">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
+              <folding>
+                <marker date="1565676679796" expanded="true" signature="6:162" ph="..." />
+                <marker date="1565676679796" expanded="true" signature="200:1894" ph="{...}" />
+                <marker date="1565676679796" expanded="true" signature="442:1242" ph="{...}" />
+                <marker date="1565676679796" expanded="true" signature="527:1234" ph="{...}" />
+                <marker date="1565676679796" expanded="true" signature="997:1224" ph="/* foreach (var t in targets) ... */" />
+                <marker date="1565676679796" expanded="true" signature="1261:1353" ph="{...}" />
+                <marker date="1565676679796" expanded="true" signature="1384:1892" ph="{...}" />
+                <marker date="1565676679796" expanded="true" signature="1727:1884" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Application/Scripts/TrackingUnko.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1575">
+              <caret line="105" selection-start-line="105" selection-end-line="105" />
+              <folding>
+                <marker date="1565676787827" expanded="true" signature="6:140" ph="..." />
+                <marker date="1565676787827" expanded="true" signature="183:2816" ph="{...}" />
+                <marker date="1565676787827" expanded="true" signature="578:832" ph="{...}" />
+                <marker date="1565676787827" expanded="true" signature="927:1662" ph="{...}" />
+                <marker date="1565676787827" expanded="true" signature="977:1023" ph="{...}" />
+                <marker date="1565676787827" expanded="true" signature="1069:1116" ph="{...}" />
+                <marker date="1565676787827" expanded="true" signature="1129:1656" ph="{...}" />
+                <marker date="1565676787827" expanded="true" signature="1335:1541" ph="{...}" />
+                <marker date="1565676787827" expanded="true" signature="1702:1734" ph="{...}" />
+                <marker date="1565676787827" expanded="true" signature="1775:1809" ph="{...}" />
+                <marker date="1565676787827" expanded="true" signature="1840:1924" ph="{...}" />
+                <marker date="1565676787827" expanded="true" signature="1956:2102" ph="{...}" />
+                <marker date="1565676787827" expanded="true" signature="2130:2375" ph="{...}" />
+                <marker date="1565676787827" expanded="true" signature="2438:2814" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Application/Shaders/Explosion.shader">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
+              <folding>
+                <marker date="1565595609294" expanded="true" signature="37:5030" ph="{...}" />
+                <marker date="1565595609294" expanded="true" signature="58:470" ph="{...}" />
+                <marker date="1565595609294" expanded="true" signature="490:5005" ph="{...}" />
+                <marker date="1565595609294" expanded="true" signature="662:4010" ph="{...}" />
+                <marker date="1565595609294" expanded="true" signature="4072:4636" ph="{...}" />
+                <marker date="1565595609294" expanded="true" signature="4142:4621" ph="{...}" />
+                <marker date="1565595609294" expanded="true" signature="4686:4999" ph="{...}" />
+                <marker date="1565595609294" expanded="true" signature="4757:4984" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Application/Scripts/Target.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
+              <folding>
+                <marker date="1565680422018" expanded="true" signature="6:53" ph="..." />
+                <marker date="1565680422018" expanded="true" signature="90:935" ph="{...}" />
+                <marker date="1565680422018" expanded="true" signature="276:358" ph="{...}" />
+                <marker date="1565680422018" expanded="true" signature="377:745" ph="{...}" />
+                <marker date="1565680422018" expanded="true" signature="463:593" ph="{...}" />
+                <marker date="1565680422018" expanded="true" signature="606:739" ph="{...}" />
+                <marker date="1565680422018" expanded="true" signature="776:933" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Application/Scripts/Unko.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="31" selection-start-line="30" selection-end-line="31" />
+              <folding>
+                <marker date="1565422631821" expanded="false" signature="6:78" ph="..." />
+                <marker date="1565422631821" expanded="true" signature="113:916" ph="{...}" />
+                <marker date="1565422631821" expanded="true" signature="182:225" ph="{...}" />
+                <marker date="1565422631821" expanded="true" signature="271:464" ph="{...}" />
+                <marker date="1565422631821" expanded="true" signature="322:458" ph="{...}" />
+                <marker date="1565422631821" expanded="true" signature="504:735" ph="{...}" />
+                <marker date="1565422631821" expanded="true" signature="614:705" ph="{...}" />
+                <marker date="1565422631821" expanded="true" signature="775:914" ph="{...}" />
+                <marker date="1565422631821" expanded="true" signature="817:872" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>_Destruction</find>
+      <find>triStream</find>
+    </findStrings>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.postprocessing@2.0.3-preview/PostProcessing/Editor/Utils/PostProcessShaderIncludePath.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Application/Scripts/Creater.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../01_source/SpaceToilet/Assets/Scripts/Parts/Unko.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Application/Scripts/TrackingUnko.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.postprocessing@2.0.3-preview/PostProcessing/Runtime/PostProcessManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Application/Shaders/Explosion.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Application/Scripts/Target.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4379FCB5-FFCD-422A-BDAB-E963856EF063/28/cbd204eb/ShortcutExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Application/Scripts/Unko.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Application/Scripts/Unko.cs" />
+        <option value="$PROJECT_DIR$/Library/PackageCache/com.unity.postprocessing@2.0.3-preview/PostProcessing/Runtime/PostProcessManager.cs" />
+        <option value="$PROJECT_DIR$/Library/PackageCache/com.unity.postprocessing@2.0.3-preview/PostProcessing/Editor/Utils/PostProcessShaderIncludePath.cs" />
+        <option value="$PROJECT_DIR$/Assets/Application/Shaders/Explosion.shader" />
+        <option value="$PROJECT_DIR$/Assets/Application/Scripts/Creater.cs" />
+        <option value="$PROJECT_DIR$/Assets/Application/Scripts/TrackingUnko.cs" />
+        <option value="$PROJECT_DIR$/Assets/Application/Scripts/Target.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-7" />
+    <option name="width" value="974" />
+    <option name="height" value="1057" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="userSelectedPid" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="userSelectedPid" value="false" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dcc45ae6-dec3-4ba0-a8f8-2f59fdacef33" name="Default Changelist" comment="" />
+      <created>1565409869538</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1565409869538</updated>
+      <workItem from="1565409879090" duration="15613000" />
+      <workItem from="1565506531692" duration="929000" />
+      <workItem from="1565583884488" duration="16842000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="33384000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" weight="0.3653217" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="NuGet" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Performance Profiler" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Unity" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Unit Tests" order="13" />
+      <window_info anchor="bottom" id="Terminal" order="14" />
+      <window_info anchor="bottom" id="Event Log" order="15" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Errors In Solution" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Unit Tests Coverage" order="5" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/../../01_source/SpaceToilet/Assets/Scripts/Parts/Unko.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1080">
+          <folding>
+            <element signature="e#0#169#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.postprocessing@2.0.3-preview/PostProcessing/Editor/Utils/PostProcessShaderIncludePath.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.postprocessing@2.0.3-preview/PostProcessing/Runtime/PostProcessManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="808">
+          <caret line="422" selection-start-line="422" selection-end-line="422" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Application/Scripts/Unko.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="31" selection-start-line="30" selection-end-line="31" />
+          <folding>
+            <marker date="1565422631821" expanded="false" signature="6:78" ph="..." />
+            <marker date="1565422631821" expanded="true" signature="113:916" ph="{...}" />
+            <marker date="1565422631821" expanded="true" signature="182:225" ph="{...}" />
+            <marker date="1565422631821" expanded="true" signature="271:464" ph="{...}" />
+            <marker date="1565422631821" expanded="true" signature="322:458" ph="{...}" />
+            <marker date="1565422631821" expanded="true" signature="504:735" ph="{...}" />
+            <marker date="1565422631821" expanded="true" signature="614:705" ph="{...}" />
+            <marker date="1565422631821" expanded="true" signature="775:914" ph="{...}" />
+            <marker date="1565422631821" expanded="true" signature="817:872" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4379FCB5-FFCD-422A-BDAB-E963856EF063/28/cbd204eb/ShortcutExtensions.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="600" column="63" selection-start-line="600" selection-start-column="63" selection-end-line="600" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Application/Scripts/Target.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <marker date="1565680422018" expanded="true" signature="6:53" ph="..." />
+            <marker date="1565680422018" expanded="true" signature="90:935" ph="{...}" />
+            <marker date="1565680422018" expanded="true" signature="276:358" ph="{...}" />
+            <marker date="1565680422018" expanded="true" signature="377:745" ph="{...}" />
+            <marker date="1565680422018" expanded="true" signature="463:593" ph="{...}" />
+            <marker date="1565680422018" expanded="true" signature="606:739" ph="{...}" />
+            <marker date="1565680422018" expanded="true" signature="776:933" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Application/Scripts/Creater.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <marker date="1565676679796" expanded="true" signature="6:162" ph="..." />
+            <marker date="1565676679796" expanded="true" signature="200:1894" ph="{...}" />
+            <marker date="1565676679796" expanded="true" signature="442:1242" ph="{...}" />
+            <marker date="1565676679796" expanded="true" signature="527:1234" ph="{...}" />
+            <marker date="1565676679796" expanded="true" signature="997:1224" ph="/* foreach (var t in targets) ... */" />
+            <marker date="1565676679796" expanded="true" signature="1261:1353" ph="{...}" />
+            <marker date="1565676679796" expanded="true" signature="1384:1892" ph="{...}" />
+            <marker date="1565676679796" expanded="true" signature="1727:1884" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Application/Scripts/TrackingUnko.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1575">
+          <caret line="105" selection-start-line="105" selection-end-line="105" />
+          <folding>
+            <marker date="1565676787827" expanded="true" signature="6:140" ph="..." />
+            <marker date="1565676787827" expanded="true" signature="183:2816" ph="{...}" />
+            <marker date="1565676787827" expanded="true" signature="578:832" ph="{...}" />
+            <marker date="1565676787827" expanded="true" signature="927:1662" ph="{...}" />
+            <marker date="1565676787827" expanded="true" signature="977:1023" ph="{...}" />
+            <marker date="1565676787827" expanded="true" signature="1069:1116" ph="{...}" />
+            <marker date="1565676787827" expanded="true" signature="1129:1656" ph="{...}" />
+            <marker date="1565676787827" expanded="true" signature="1335:1541" ph="{...}" />
+            <marker date="1565676787827" expanded="true" signature="1702:1734" ph="{...}" />
+            <marker date="1565676787827" expanded="true" signature="1775:1809" ph="{...}" />
+            <marker date="1565676787827" expanded="true" signature="1840:1924" ph="{...}" />
+            <marker date="1565676787827" expanded="true" signature="1956:2102" ph="{...}" />
+            <marker date="1565676787827" expanded="true" signature="2130:2375" ph="{...}" />
+            <marker date="1565676787827" expanded="true" signature="2438:2814" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Application/Shaders/Explosion.shader">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <marker date="1565595609294" expanded="true" signature="37:5030" ph="{...}" />
+            <marker date="1565595609294" expanded="true" signature="58:470" ph="{...}" />
+            <marker date="1565595609294" expanded="true" signature="490:5005" ph="{...}" />
+            <marker date="1565595609294" expanded="true" signature="662:4010" ph="{...}" />
+            <marker date="1565595609294" expanded="true" signature="4072:4636" ph="{...}" />
+            <marker date="1565595609294" expanded="true" signature="4142:4621" ph="{...}" />
+            <marker date="1565595609294" expanded="true" signature="4686:4999" ph="{...}" />
+            <marker date="1565595609294" expanded="true" signature="4757:4984" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
