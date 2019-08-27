@@ -1,9 +1,12 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using Grpc.Core;
 using MagicOnion.Client;
 using UniRx;
+using UniRx.Async;
 using UniRx.Triggers;
 using UnityEngine.Serialization;
+using Random = UnityEngine.Random;
 
 public class MagicOnionClient : MonoBehaviour, IUnkoHubReceiver
 {
@@ -11,8 +14,7 @@ public class MagicOnionClient : MonoBehaviour, IUnkoHubReceiver
     [SerializeField] private GameObject ponponUnko;
 
     public ReactiveProperty<bool> IsJoin = new ReactiveProperty<bool>();
-
-    private string serverIp = "10.32.154.25";
+    public Action ShootAction;
 
     private Channel channel;
     private IUnkoHub unkoHub;
@@ -20,9 +22,13 @@ public class MagicOnionClient : MonoBehaviour, IUnkoHubReceiver
     void Start()
     {
         IsJoin.Value = false;
-        
-        channel = new Channel($"{serverIp}:12345", ChannelCredentials.Insecure);
+
+        channel = ChannelController.GetChannel(false);
         unkoHub = StreamingHubClient.Connect<IUnkoHub, IUnkoHubReceiver>(channel, this);
+    }
+
+    void Update()
+    {
     }
 
     private async void OnDestroy()
@@ -33,10 +39,21 @@ public class MagicOnionClient : MonoBehaviour, IUnkoHubReceiver
 
     public async void Join()
     {
+        if (channel == null)
+        {
+            Debug.Log("Channel is null, so recreation.");
+            channel = ChannelController.GetChannel(true);
+        }
+        if (unkoHub == null)
+        {
+            Debug.Log("Hub is null, so recreation.");
+            unkoHub = StreamingHubClient.Connect<IUnkoHub, IUnkoHubReceiver>(channel, this);
+        }
+        
 #if UNITY_EDITOR
         await unkoHub.JoinAsync("Editor");
 #else
-        await chatHub.JoinAsync("Oculus Quest");
+        await unkoHub.JoinAsync("Oculus Quest");
 #endif
         IsJoin.Value = true;
         Debug.Log("You joined in the room");
@@ -78,22 +95,6 @@ public class MagicOnionClient : MonoBehaviour, IUnkoHubReceiver
 
     public void OnShoot()
     {
-        Ponpon();
-    }
-    private void Ponpon()
-    {
-        var pos = transform.position + new Vector3(-0.8f, 1f, 1.5f);
-        var obj = Instantiate(ponponUnko, pos, new Quaternion());
-
-        var x = (Random.value - 0.5f) * 2f;
-        obj.GetComponent<Rigidbody>().AddForce(new Vector3(x, 1f, 1f) * 5, ForceMode.Impulse);
-
-        obj.OnCollisionEnterAsObservable().Subscribe(_ =>
-        {
-            Debug.Log($"Hit to {_.transform.name}");
-            if (_.transform.name.ToLower() == "plane") return;
-
-            Destroy(obj, 1);
-        });
+        ShootAction();
     }
 }

@@ -7,6 +7,9 @@ using UniRx.Triggers;
 public class ShootingCreater : MonoBehaviour
 {
     [SerializeField] private MagicOnionClient magicOnionClient;
+    [SerializeField] private GameObject head;
+    
+    [Header("Unko")]
     [SerializeField] private GameObject creature;
     [SerializeField] private List<Transform> targets = new List<Transform>();
 
@@ -18,15 +21,6 @@ public class ShootingCreater : MonoBehaviour
     {
         Observable.Interval(TimeSpan.FromSeconds(0.3)).Subscribe(_ =>
         {
-            if (index >= targets.Count) return;
-
-            var target = targets[index++];
-
-            var c = Instantiate(creature, transform.position + new Vector3(0, 1f, 0), transform.rotation);
-            var trackingUnko = c.GetComponent<TrackingUnko>();
-            trackingUnko.SetEnemy(target);
-
-            creatures.Add(c);
         });
         
         SetControllerOperation();
@@ -34,6 +28,11 @@ public class ShootingCreater : MonoBehaviour
 
     void Update()
     {
+        if (magicOnionClient.IsJoin.Value)
+        {
+            var pos = head.transform.position;
+            magicOnionClient.SendPosition(pos.x, pos.y, pos.z);
+        }
     }
     
     private void SetControllerOperation()
@@ -42,8 +41,6 @@ public class ShootingCreater : MonoBehaviour
             .Where(_ => OVRInput.GetDown(OVRInput.Button.SecondaryIndexTrigger))
             .Subscribe(_ =>
             {
-                var message = "Input by SecondaryIndexTrigger.";
-                
                 if (magicOnionClient.IsJoin.Value)
                 {
 //                    magicOnionClient.Leave();
@@ -54,10 +51,8 @@ public class ShootingCreater : MonoBehaviour
                 else
                 {
                     magicOnionClient.Join();
-                    message += Environment.NewLine + "Action to Join";
+                    magicOnionClient.ShootAction = Shoot;
                 }
-
-                Debug.Log(message);
             });
 
         this.UpdateAsObservable()
@@ -66,6 +61,7 @@ public class ShootingCreater : MonoBehaviour
                 if (Input.GetKeyDown(KeyCode.J))
                 {
                     magicOnionClient.Join();
+                    magicOnionClient.ShootAction = Shoot;
                 }
                 if (Input.GetKeyDown(KeyCode.L))
                 {
@@ -76,5 +72,18 @@ public class ShootingCreater : MonoBehaviour
                     magicOnionClient.Shoot();
                 }
             });
+    }
+
+    private void Shoot()
+    {
+        if (index >= targets.Count) return;
+
+        var target = targets[index++];
+
+        var c = Instantiate(creature, transform.position + new Vector3(0, 1f, 0), transform.rotation);
+        var trackingUnko = c.GetComponent<TrackingUnko>();
+        trackingUnko.SetEnemy(target);
+
+        creatures.Add(c);
     }
 }
