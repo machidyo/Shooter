@@ -1,8 +1,8 @@
-﻿using System.Collections;
+﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
-using Unity;
 using UnityEngine.SceneManagement;
+using UniRx;
 
 public class MySceneManager : MonoBehaviour, IManager
 {
@@ -11,18 +11,23 @@ public class MySceneManager : MonoBehaviour, IManager
     
     private static readonly string startScene = "01_Start";
     private static readonly string endScene = "99_end";
-    
+
+    private static MySceneManager instance;
+
     void Awake()
     {
-        DontDestroyOnLoad(this);
-        
-        Logger.Init();
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(instance);
+            Init();
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
     
-    void Start()
-    {
-    }
-
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
@@ -31,20 +36,33 @@ public class MySceneManager : MonoBehaviour, IManager
         }
         if (Input.GetKeyDown(KeyCode.S))
         {
-            Init();
-            SceneManager.LoadScene(startScene);
+            BackStartScene();
         }
         if (Input.GetKeyDown(KeyCode.E))
         {
-            SceneManager.LoadScene(endScene);
+            MoveEndScene();
         }
     }
 
     public void Init()
     {
+        Logger.Init();
+        
         foreach (var manager in managers)
         {
             manager.Init();
         }
+    }
+
+    private void BackStartScene()
+    {
+        Init();
+        SceneManager.LoadScene(startScene);
+    }
+
+    private void MoveEndScene()
+    {
+        SceneManager.LoadScene(endScene);
+        Observable.Timer(TimeSpan.FromSeconds(3)).First().Subscribe(_ => BackStartScene());
     }
 }

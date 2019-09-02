@@ -23,8 +23,14 @@ public static class Logger
 
     private static ILog logger;
 
+    private static bool isInitialized = false;
+
     public static void Init()
     {
+        // SPEC:
+        //   初期化は一回しかできない。
+        if(isInitialized) return;
+        
         logger = LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
         // SPEC:
@@ -36,6 +42,8 @@ public static class Logger
 
         logger.Info("Logging is started, log level is " + ROOT_LEVEL + ".");
         logger.Info("Log file is " + Path.Combine(LOG_PATH, fileName) + ".");
+
+        isInitialized = true;
     }
 
     public static void Debug(string message)
