@@ -8,9 +8,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Application/Scenes/01_Start.unity
     guid: 8a0b313ac9906914b933936eae1b93da
+  - enabled: 0
+    path: Assets/Application/Scenes/ShootingMulti.unity
+    guid: 5100a1cbbb94c84419a51bca68ebba44
   - enabled: 1
     path: Assets/Application/Scenes/Shooting.unity
-    guid: 5100a1cbbb94c84419a51bca68ebba44
+    guid: c07fa162628c87a44943d97f59f90eba
   - enabled: 1
     path: Assets/Application/Scenes/99_End.unity
     guid: 0d5d7cc332fa48f4a9d9829d016b7197

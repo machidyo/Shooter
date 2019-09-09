@@ -7,7 +7,8 @@ using UniRx;
 public class MySceneManager : MonoBehaviour, IManager
 {
     [SerializeField] private string mainScene;
-    [SerializeField] private List<IManager> managers = new List<IManager>();
+
+    private static List<IManager> managers = new List<IManager>();
     
     private static readonly string startScene = "01_Start";
     private static readonly string endScene = "99_end";
@@ -24,27 +25,28 @@ public class MySceneManager : MonoBehaviour, IManager
         }
         else
         {
+            Debug.Log("Destory!");
             Destroy(gameObject);
         }
     }
     
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) || OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger))
         {
             SceneManager.LoadScene(mainScene);
         }
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            BackStartScene();
-        }
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E) && Input.GetKeyDown(KeyCode.LeftShift) && Input.GetKeyDown(KeyCode.LeftControl))
         {
             MoveEndScene();
         }
+        if (Input.GetKeyDown(KeyCode.S) && Input.GetKeyDown(KeyCode.LeftShift) && Input.GetKeyDown(KeyCode.LeftControl))
+        {
+            BackStartScene();
+        }
     }
 
-    public void Init()
+    private static void InitAll()
     {
         Logger.Init();
         
@@ -54,13 +56,18 @@ public class MySceneManager : MonoBehaviour, IManager
         }
     }
 
-    private void BackStartScene()
+    public void Init()
     {
-        Init();
+        InitAll();
+    }
+
+    private static void BackStartScene()
+    {
+        InitAll();
         SceneManager.LoadScene(startScene);
     }
 
-    private void MoveEndScene()
+    public static void MoveEndScene()
     {
         SceneManager.LoadScene(endScene);
         Observable.Timer(TimeSpan.FromSeconds(3)).First().Subscribe(_ => BackStartScene());
