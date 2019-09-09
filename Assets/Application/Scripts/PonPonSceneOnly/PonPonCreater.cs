@@ -2,18 +2,17 @@
 using UnityEngine;
 using UniRx;
 using UniRx.Triggers;
-using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 
 public class PonPonCreater : MonoBehaviour
 {
-    [FormerlySerializedAs("creature")] [SerializeField] private GameObject ponponUnko;
+    [SerializeField] private GameObject ponponUnko;
     [SerializeField] private bool isAuto = false;
 
     void Start()
     {
         Observable
-            .Interval(TimeSpan.FromSeconds(0.1))
+            .Interval(TimeSpan.FromSeconds(5.5))
             .Where(_ => isAuto)
             .Subscribe(_ => Ponpon())
             .AddTo(this);
@@ -29,7 +28,7 @@ public class PonPonCreater : MonoBehaviour
     
     private void Ponpon()
     {
-        var pos = transform.position + new Vector3(-0.8f, 1f, 1.5f);
+        var pos = transform.position + new Vector3(-0.8f, 1f, -0.1f);
         var obj = Instantiate(ponponUnko, pos, new Quaternion());
 
         var x = (Random.value - 0.5f) * 2f;
@@ -37,9 +36,9 @@ public class PonPonCreater : MonoBehaviour
 
         obj.OnCollisionEnterAsObservable().Subscribe(_ =>
         {
-            Debug.Log($"Hit to {_.transform.name}");
-            if (_.transform.name.ToLower() == "plane") return;
+            if (_.transform.name.ToLower() != "unkoman") return;
 
+            Debug.Log($"Hit to {_.transform.name}");
             Destroy(obj, 1);
         });
     }
