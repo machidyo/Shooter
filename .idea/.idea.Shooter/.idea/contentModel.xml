@@ -9,21 +9,39 @@
       <e p="Assets" t="Include">
         <e p="Application" t="Include">
           <e p="Scripts" t="Include">
-            <e p="CubeStatus.cs" t="Include" />
             <e p="MagicOnion" t="Include">
               <e p="ChannelController.cs" t="Include" />
+              <e p="CubeStatus.cs" t="Include" />
               <e p="Definition" t="Include">
                 <e p="IUnkoHub.cs" t="Include" />
                 <e p="IUnkoHubReceiver.cs" t="Include" />
               </e>
               <e p="MagicOnionClient.cs" t="Include" />
             </e>
-            <e p="PonPonCreater.cs" t="Include" />
-            <e p="PonPonUnko.cs" t="Include" />
-            <e p="ShootingCreater.cs" t="Include" />
-            <e p="TrackingCreater.cs" t="Include" />
-            <e p="TrackingTarget.cs" t="Include" />
-            <e p="TrackingUnko.cs" t="Include" />
+            <e p="Manager" t="Include">
+              <e p="IManager.cs" t="Include" />
+              <e p="MySceneManager.cs" t="Include" />
+              <e p="ShootingManager.cs" t="Include" />
+            </e>
+            <e p="PonPonSceneOnly" t="Include">
+              <e p="PonPonCreater.cs" t="Include" />
+              <e p="PonPonUnko.cs" t="Include" />
+            </e>
+            <e p="Shooting" t="Include">
+              <e p="BulletUnko.cs" t="Include" />
+              <e p="Enemy.cs" t="Include" />
+              <e p="Player.cs" t="Include" />
+              <e p="ShootingCreater.cs" t="Include" />
+              <e p="ShootingScreenUI.cs" t="Include" />
+              <e p="TrackingUnko.cs" t="Include" />
+            </e>
+            <e p="TrackingSceneOnly" t="Include">
+              <e p="TrackingCreater.cs" t="Include" />
+              <e p="TrackingTarget.cs" t="Include" />
+            </e>
+            <e p="Utility" t="Include">
+              <e p="Logger.cs" t="Include" />
+            </e>
           </e>
           <e p="Shaders" t="Include">
             <e p="Explosion.shader" t="Include" />
@@ -377,6 +395,7 @@
               <e p="PlatformInternal.cs" t="Include" />
               <e p="PlatformSettings.cs" t="Include" />
               <e p="Request.cs" t="Include" />
+              <e p="RichPresenceExtraContext.cs" t="Include" />
               <e p="RichPresenceOptions.cs" t="Include" />
               <e p="RoomJoinability.cs" t="Include" />
               <e p="RoomJoinPolicy.cs" t="Include" />
